@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { FaBitcoin, FaYoutube, FaSquareGithub } from "react-icons/fa6";
+import { FaBitcoin, FaYoutube } from "react-icons/fa6";
+import { FaGithubSquare } from "react-icons/fa";
 import { BsInstagram } from "react-icons/bs";
 import { GiHamburgerMenu } from "react-icons/gi";
 
@@ -8,7 +9,7 @@ const Navbar = () => {
   const [show, setShow] = useState(false);
   return (
     <>
-      <nav className={show ? "navbar navbar_show" : "navbar"}>
+      <nav className={show ? "navbar show_navbar" : "navbar"}>
         <div className="logo">
           <img src="/logo.png" alt="logo" />
         </div>
@@ -18,7 +19,7 @@ const Navbar = () => {
               <Link to={"/"}>HOME</Link>
             </li>
             <li>
-              <Link to={"/donate"}>DONATE US</Link>
+              <Link to={"/donateus"}>DONATE US</Link>
             </li>
             <li>
               <Link to={"/about"}>ABOUT</Link>
@@ -29,24 +30,16 @@ const Navbar = () => {
           </ul>
           <ul>
             <li>
-              <Link to={"/"}>
-                <FaBitcoin />
-              </Link>
+              <FaBitcoin />
             </li>
             <li>
-              <Link to={"/"}>
-                <FaYoutube />
-              </Link>
+              <FaYoutube />
             </li>
             <li>
-              <Link to={"/"}>
-                <FaSquareGithub />
-              </Link>
+              <FaGithubSquare />
             </li>
             <li>
-              <Link to={"/"}>
-                <BsInstagram />
-              </Link>
+              <BsInstagram />
             </li>
           </ul>
         </div>

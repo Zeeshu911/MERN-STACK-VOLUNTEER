@@ -19,7 +19,7 @@ const Navbar = () => {
               <Link to={"/"}>HOME</Link>
             </li>
             <li>
-              <Link to={"/donateus"}>DONATE US</Link>
+              <Link to={"/donate"}>DONATE US</Link>
             </li>
             <li>
               <Link to={"/about"}>ABOUT</Link>
